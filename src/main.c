@@ -20,7 +20,7 @@ int __init initialize(void)
     return 0;
 }
 
-void __init uninitialize(void)
+void __exit uninitialize(void)
 {
     nf_unregister_hook(&options);
     pr_info("Uninitialized.");
